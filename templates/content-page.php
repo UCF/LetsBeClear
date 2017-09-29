@@ -1,6 +1,6 @@
 <?php $frontpage_id = get_option( 'page_on_front' ); ?>
 
-<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 700 ), false, ''  ); ?>
+<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
 
 <?php if( $src[0] != null ):?>
 
