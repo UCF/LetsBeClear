@@ -5,23 +5,6 @@
 // Disable Yoast Schema
 add_filter( 'wpseo_json_ld_output', '__return_false' );
 
-// Hides the Samurai User from All Other Users
-add_action('pre_user_query','hide_samurai');
-function hide_samurai($user_search) {
-
-  global $current_user;
-  $username = $current_user->user_login;
- 
-  if ($username == 'samurai') { 
-  	// Do Nothing
-  } else {
-    global $wpdb;
-    $user_search->query_where = str_replace('WHERE 1=1',
-      "WHERE 1=1 AND {$wpdb->users}.user_login != '<YOUR USERNAME>'",$user_search->query_where);
-  }
-
-}
-
 // Fix the Tabbing of Input Boxes for Gravity forms
 add_filter( 'gform_tabindex', 'gform_tabindexer', 10, 2 );
 function gform_tabindexer( $tab_index, $form = false ) {
