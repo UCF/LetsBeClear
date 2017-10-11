@@ -211,13 +211,13 @@
 
 								<?php if( $cdisplay === 'double' ): ?>
 
-									<div class="column-content col-lg-6 col-md-6 col-sm-12 col-xs-12">
+									<div class="column-content double col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 								<?php endif; ?>
 
 								<?php if( $cdisplay === 'triple' ): ?>
 
-									<div class="column-content col-lg-4 col-md-4 col-sm-12 col-xs-12">
+									<div class="column-content triple col-lg-4 col-md-4 col-sm-12 col-xs-12">
 
 								<?php endif; ?>
 
@@ -363,7 +363,7 @@
 
 									<?php if (($i % 3) == 0) { ?>
 
-										<div class="clear"></div>
+										<div class="clear triple-clear"></div>
 
 									<?php } ?>
 

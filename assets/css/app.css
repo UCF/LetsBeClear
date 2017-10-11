@@ -6,44 +6,129 @@
    Fonts
    ========================================================================== */
 
-@font-face{
-  font-family:'Gotham Black';
-  src: url('fonts/Gotham-Black.otf'); /* everyone else take this */
+/*@font-face{
+  font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 800;
+  src: url('fonts/Gotham-Black.otf');
 }
 
 @font-face{
-  font-family:'Gotham Book';
-  src: url('fonts/Gotham-Book.otf'); /* everyone else take this */
+  font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight:300;
+  src: url('fonts/Gotham-Book.otf');
 }
 
 @font-face{
-  font-family:'Gotham BookItalic';
-  src: url('fonts/Gotham-BookItalic.otf'); /* everyone else take this */
+  font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-style: italic;
+  src: url('fonts/Gotham-BookItalic.otf');
 }
 
 @font-face{
-  font-family:'Gotham Medium';
-  src: url('fonts/Gotham-Medium.otf'); /* everyone else take this */
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 400;
+  src: url('fonts/Gotham-Medium.otf');
 }
 
 @font-face{
   font-family:'Gotham MediumItalic';
-  src: url('fonts/Gotham-MediumItalic.otf'); /* everyone else take this */
+  src: url('fonts/Gotham-MediumItalic.otf');
 }
 
 @font-face{
-  font-family:'Gotham Bold';
-  src: url('fonts/GothamBold.otf'); /* everyone else take this */
+  font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
+  src: url('fonts/GothamBold.otf');
 }
 
 @font-face{
-  font-family:'Archer Book';
-  src: url('fonts/Archer-Book.otf'); /* everyone else take this */
+  font-family: "Archer A","Archer B","UCF Slab Serif Alt",serif;
+  src: url('fonts/Archer-Book.otf');
 }
 
 @font-face{
-  font-family:'Archer Medium';
-  src: url('fonts/Archer-Medium.otf'); /* everyone else take this */
+  font-family: "Archer A","Archer B","UCF Slab Serif Alt",serif; font-weight: bolder;
+  src: url('fonts/Archer-Medium.otf');
+}*/
+
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src:url(fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff2) format("woff2"),
+    url(fonts/ucf-sans-serif-alt/ucfsansserifalt-light-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:400;
+}
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src:url(fonts/ucf-sans-serif-alt/ucfsansserifalt-semibold-webfont.woff2) format("woff2"),
+  url(fonts/ucf-sans-serif-alt/ucfsansserifalt-semibold-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:600;
+}
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src:url(fonts/ucf-sans-serif-alt/ucfsansserifalt-extralight-webfont.woff2) format("woff2"),
+  url(fonts/ucf-sans-serif-alt/ucfsansserifalt-extralight-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:300;
+}
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src:url(fonts/ucf-sans-serif-alt/ucfsansserifalt-regular-webfont.woff2) format("woff2"),
+  url(fonts/ucf-sans-serif-alt/ucfsansserifalt-regular-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:500;
+}
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src:url(fonts/ucf-sans-serif-alt/ucfsansserifalt-bold-webfont.woff2) format("woff2"),
+  url(fonts/ucf-sans-serif-alt/ucfsansserifalt-bold-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:700;
+}
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src:url(fonts/ucf-sans-serif-alt/ucfsansserifalt-extrabold-webfont.woff2) format("woff2"),
+  url(fonts/ucf-sans-serif-alt/ucfsansserifalt-extrabold-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:800;
+}
+@font-face{
+  font-family:"UCF Sans Serif Alt";
+  src:url(fonts/ucf-sans-serif-alt/ucfsansserifalt-black-webfont.woff2) format("woff2"),
+  url(fonts/ucf-sans-serif-alt/ucfsansserifalt-black-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:900;
+}
+@font-face{
+  font-family:"UCF Condensed Alt";
+  src:url(fonts/ucf-condensed-alt/ucfcondensedalt-regular-webfont.woff2) format("woff2"),
+  url(fonts/ucf-condensed-alt/ucfcondensedalt-regular-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:400;
+}
+@font-face{
+  font-family:"UCF Condensed Alt";
+  src:url(fonts/ucf-condensed-alt/ucfcondensedalt-italic-webfont.woff2) format("woff2"),
+  url(fonts/ucf-condensed-alt/ucfcondensedalt-italic-webfont.woff) format("woff");
+  font-style:italic;
+  font-weight:400;
+}
+@font-face{
+  font-family:"UCF Slab Serif Alt";
+  src:url(fonts/tulia/tulia_regular-webfont.woff2) format("woff2"),
+  url(fonts/tulia/tulia_regular-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:400;
+}
+@font-face{
+  font-family:"UCF Slab Serif Alt";
+  src:url(fonts/tulia/tulia_italic-webfont.woff2) format("woff2"),
+  url(fonts/tulia/tulia_italic-webfont.woff) format("woff");
+  font-style:italic;
+  font-weight:400;
+}
+@font-face{
+  font-family:"UCF Slab Serif Alt";
+  src:url(fonts/tulia/tulia_bold-webfont.woff2) format("woff2"),
+  url(fonts/tulia/tulia_bold-webfont.woff) format("woff");
+  font-style:normal;
+  font-weight:600;
 }
 
 
@@ -66,7 +151,7 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family:'Gotham Book';
+  font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight:400;
   font-size: 16px;
 }
 
@@ -103,8 +188,8 @@ img {
 }
 
 b, strong {
-	font-family:'Gotham Bold';
-	font-weight: normal;
+	font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; 
+  font-weight: 700;
 }
 
 
@@ -151,7 +236,7 @@ b, strong {
         .exit-page-header {
           text-transform: uppercase;
           letter-spacing: 2px;
-          font-family:'Gotham Bold';
+          font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
           display: block;
         }
 
@@ -223,7 +308,7 @@ b, strong {
             text-transform: uppercase;
             padding: 20px 15px 18px 17px;
             font-size: 0.875em;
-            font-family:'Gotham Bold';
+            font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
             color: #000000;
           }
 
@@ -295,7 +380,7 @@ b, strong {
     display: inline-block;
     font-size: 4.250em;
     color: #000000;
-    font-family:'Archer Book';
+    font-family: "Archer A","Archer B","UCF Slab Serif Alt",serif;
   }
 
   #home-hero .content {
@@ -306,7 +391,7 @@ b, strong {
     font-size: 1.375em;
     max-width: 400px;
     color: #ffffff;
-    font-family:'Archer Book';
+    font-family: "Archer A","Archer B","UCF Slab Serif Alt",serif;
   }
 
   #home-hero .support {
@@ -352,12 +437,12 @@ b, strong {
       text-transform: uppercase;
       padding: 30px 0 10px 0;
       font-size: 1.1875em;
-      font-family:'Gotham Bold';
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
       color: #ffc801;
     }
 
     #home-hero .support p {
-    	font-family:'Archer Medium';
+    	font-family: "Archer A","Archer B","UCF Slab Serif Alt",serif;
     	font-size: 1.125em;
       color: #ffffff;
     }
@@ -374,7 +459,7 @@ b, strong {
   }
 
   #home-about h2 {
-  	font-family:'Gotham Black';
+  	font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 800;
   	letter-spacing: 1px;
     padding: 0 0 30px 0;
     font-size: 2.688em;
@@ -392,7 +477,7 @@ b, strong {
     background-color: #ffc801;
     padding: 25px 28px 24px 30px;
     font-size: 1.125em;
-    font-family:'Gotham Bold';
+    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
     color: #000000;
     margin: 0;
   }
@@ -408,7 +493,7 @@ b, strong {
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 1.125em;
-      font-family:'Gotham Bold';
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
       color: #000000;
     }
 
@@ -443,7 +528,7 @@ b, strong {
     display: inline-block;
     font-size: 4.250em;
     color: #000000;
-    font-family:'Archer Book';
+    font-family: "Archer A","Archer B","UCF Slab Serif Alt",serif;
   }
 
   .hero .content {
@@ -455,7 +540,7 @@ b, strong {
     display: inline-block;
     max-width: 585px;
     color: #ffffff;
-    font-family:'Archer Book';
+    font-family: "Archer A","Archer B","UCF Slab Serif Alt",serif;
   }
 
 #page-content {
@@ -474,7 +559,7 @@ b, strong {
   	  position: relative;
   	  font-size: 1.187em;
   	  display: block;
-  	  font-family:'Gotham Bold';
+  	  font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
   	  margin: 0 0 20px 0;
     }
 
@@ -507,7 +592,7 @@ b, strong {
     .subpage a {
       text-transform: uppercase;
       margin: 0 25px 0 25px;
-      font-family:'Gotham Bold';
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
       color: #000000;
     }
 
@@ -539,7 +624,7 @@ b, strong {
   	text-transform: uppercase;
   	position: relative;
   	font-size: 0.875em;
-  	font-family:'Gotham Bold';
+  	font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
   	display: block;
     background-color: #ffc801;
     color: #000000;
@@ -631,18 +716,18 @@ b, strong {
 	}
 
 		#copy {
-			padding: 50px 45px 50px 45px;
+			padding: 50px 45px 20px 45px;
 			overflow: hidden;
 		}
 
 			.content-section {
-				padding: 0 0 50px 0;
+				padding: 0 0 20px 0;
 			}
 
 			#copy h2 {
-				font-size: 3.063em;
+				font-size: 2.750em;
 				padding: 0 0 20px 0;
-				font-family:'Gotham Bold';
+				font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
 			}
 
         #copy h2 a,
@@ -652,22 +737,38 @@ b, strong {
 
 				#copy h3 {
 					text-transform: uppercase;
+          padding: 0 0 15px 0;
 					font-size: 1.188em;
-					font-family:'Gotham Bold';
+					font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
 				}
 
 			.column-content {
-				padding: 40px 0 0 0;
+				padding: 10px 0;
 			}
+
+        .column-content.triple {
+          padding: 0 0 40px 0;
+        }
+
+          .column-content.triple .inner {
+            max-width: 80%;
+          }
 
 				#copy .column-content h1,
 				#copy .column-content h2,
 				#copy .column-content h3 {
 					text-transform: none;
 					padding: 0 0 10px 0;
-					font-size: 1.625em;
-					font-family:'Gotham Bold';
+					font-size: 1.600em;
+					font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
 				}
+
+        #copy .column-content h4 {
+          text-transform: none;
+          padding: 0 0 5px 0;
+          font-size: 1.125em;
+          font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
+        }
 
         .column-content.single .inner {
           max-width: 100%;
@@ -678,6 +779,7 @@ b, strong {
 				}
 
 					#copy a {
+            word-break: break-all;
 						color: #337ab7;
 					}
 
@@ -697,7 +799,7 @@ b, strong {
 						}
 
 			#copy .accordion {
-        padding: 40px 0 0 0;
+        padding: 20px 0 0 0;
 			}
 
 				#copy .single-accordion {
@@ -730,19 +832,38 @@ b, strong {
 						top: 0;
 					}
 
+          #copy .accordion .accordion-content h2 {
+            background-color: transparent;
+            padding: 0 0 20px 0;
+            cursor: auto;
+          }
+
+          #copy .accordion .accordion-content h2 span {
+            background-color: transparent;
+            text-transform: none;
+            font-size: 1.625em;
+            position: relative;
+            color: #000000;
+            cursor: auto;
+            bottom: auto;
+            right: auto;
+            top: auto;
+            width: 100%;
+          }
+
 				#copy .accordion h3 {
 					padding: 0 0 20px 0;
 					font-size: 1.625em;
 				}
 
 				#copy .accordion h4 {
-					font-size: 1.0000em;
-					padding: 0 0 20px 0;
-					font-family:'Gotham Bold';
+					font-size: 1.250em;
+					padding: 0 0 10px 0;
+					font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
 				}
 
 				#copy p {
-					padding: 0 0 15px 0;
+					padding: 0;
 				}
 
 				.accordion-content {
@@ -770,7 +891,7 @@ b, strong {
   .comparison-table thead th {
     text-transform: uppercase;
     background-color: #ffc801;
-    font-family:'Gotham Bold';
+    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
     text-align: center;
     padding: 10px 15px;
   }
@@ -793,7 +914,7 @@ b, strong {
     }
 
 .support-chart {
-	margin: 15px 0 0 0;
+	margin: 15px 0 20px 0;
 }
 
 	.support-chart th:first-child,
@@ -820,7 +941,7 @@ b, strong {
 			border-right: 1px #e1e1e1 solid;
 		    /*text-transform: uppercase;*/
 		    /*background-color: #ffc801;*/
-		    font-family:'Gotham Bold';
+		    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
 		    text-align: center;
 		    padding: 10px 15px;
 		    font-size: 0.900em;
@@ -854,7 +975,7 @@ b, strong {
 			}
 
 	    	.support-chart tbody tr td a {
-	    		font-family:'Gotham Bold';
+	    		font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
 	    	}
 
 	    	.support-chart tbody tr td img {
@@ -937,14 +1058,14 @@ b, strong {
         text-transform: uppercase;
         font-size: 1.000em;
         margin: 0 0 5px 0;
-        font-family:'Gotham Bold';
+        font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
       }
 
       #footer-resources .resource p {
         text-transform: uppercase;
         word-break: break-all;
         font-size: 1.250em; 
-        font-family:'Gotham Black';
+        font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 800;
         color: #000000;
       }
 
@@ -981,13 +1102,13 @@ b, strong {
 
         .footer-nav ul li {
           display: inline-block;
-          margin: 0 0 0 20px;
+          margin: 0 0 0 12px;
         }
 
           .footer-nav .navbar-nav>li>a {
             text-transform: uppercase;
             font-size: 0.750em;
-            font-family:'Gotham Bold';
+            font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
             color: #9d9d9d;
             padding: 0;
           }
@@ -1020,7 +1141,7 @@ b, strong {
     padding: 25px 28px 24px 30px;
     display: block;
     font-size: 1.125em;
-    font-family: 'Gotham Bold';
+    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
     color: #000000;
     margin: 5px 0;
   }
@@ -1074,7 +1195,7 @@ b, strong {
     }
 
   #home-about .copy p {
-    font-family: 'Gotham Bold';
+    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
   }
 
   .subpage {
@@ -1177,7 +1298,7 @@ b, strong {
       border: 1px solid transparent;
       border-radius: 4px;
       border-color: #c90;
-      font-family: 'Gotham Bold';
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
     }
 
       .subnav-menu-toggle:hover,
@@ -1215,7 +1336,7 @@ b, strong {
       margin: 14px 0;
       color: #ffffff;
       float: left;
-      font-family: 'Gotham Bold';
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
     }
 
   .navbar-toggle {
