@@ -547,6 +547,19 @@ b, strong {
   padding: 75px 0 35px 0;
 }
 
+  #page-landing-intro {
+    padding: 0 15px 50px 15px;
+    margin: -25px auto 0 auto;
+  }
+
+    #page-landing-intro h2 {
+      text-transform: uppercase;
+      padding: 0 0 15px 0;
+      font-size: 1.250em;
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif;
+      font-weight: 700;
+    }
+
   .subpage {
     padding: 0 75px 40px 0;
     width: 49%;
@@ -990,6 +1003,72 @@ b, strong {
 				text-transform: uppercase;
 				box-shadow: 0 0 7px black;
 			}
+
+
+
+  /* ==========================================================================
+   Modals
+   ========================================================================== */
+
+#call-modal {
+  background: url(../img/opaque-black-background.png);
+  position: fixed;
+  color: #ffffff;
+  display: none;
+  z-index: 10001;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+  .call-modal-content {
+    background-color: #ffc801;
+    position: relative;
+    text-align: center;
+    max-height: 600px;
+    max-width: 550px;
+    margin: 25% auto 0 auto;
+    padding: 30px 20px 20px 20px;
+  }
+
+  #call-modal .modal-content-container {
+    padding: 0 0 30px 0;
+  }
+
+    .call-modal-content h3 {
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif;
+      padding: 20px 0 10px 0;
+      font-size: 2.000em;
+      font-weight: 700;
+      color: #252525;
+    }
+
+    #call-modal p {
+      padding: 10px 0 0 0;
+      margin: 0 auto;
+      max-width: 80%;
+      display: block;
+      color: #252525;
+    }
+
+    #call-modal p.call {
+      font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif;
+      font-size: 1.125em;
+      font-weight: 700;
+    }
+
+    .call-modal-content a {
+      color: #000000;
+    }
+
+  .close-call-modal {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+    top: 15px;
+    width: 20px;
+    z-index: 101;
+  }
 
 
 
@@ -1469,12 +1548,17 @@ b, strong {
     padding: 15px 0 0 0;
   }
 
+  #page-landing-intro {
+    padding: 0 15px 50px 15px;
+    margin: 0 auto;
+  }
+
   .subpage {
     padding: 0;
   }
 
   .support-chart {
-	overflow: scroll;
+	 overflow: scroll;
   }
 
   #footer-resources {
@@ -1541,6 +1625,20 @@ b, strong {
 }
 
 @media (max-width: 660px) {
+
+  .call-modal-content {
+    background-color: #ffc801;
+    position: absolute;
+    text-align: center;
+    max-height: none;
+    max-width: none;
+    margin: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 30px 20px 20px 20px;
+  }
 
   .comparison-table tbody tr td {
     padding: 15px;

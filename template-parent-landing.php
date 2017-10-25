@@ -43,6 +43,26 @@ Template Name: Parent Landing
 </div>
 
 <div id="page-content">
+
+	<?php if( get_field('landing_intro_header') || get_field('landing_intro_paragraph') ):?>
+
+		<div id="page-landing-intro" class="container">
+			
+			<?php if( get_field('landing_intro_header') ):?>
+
+				<h2><?php the_field('landing_intro_header'); ?></h2>
+
+			<?php endif; ?>
+
+			<?php if( get_field('landing_intro_paragraph') ):?>
+
+				<div class="intro"><?php the_field('landing_intro_paragraph'); ?></div>
+
+			<?php endif; ?>
+
+		</div>
+
+	<?php endif; ?>
 	
 	<div class="container flex-container">
 		

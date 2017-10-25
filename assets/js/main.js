@@ -57,4 +57,14 @@ $(document).ready(function(){
 		}
 	);
 
+	$('.call-header').click(function (e) {
+        e.preventDefault();
+        $('#call-modal').fadeIn();
+    });
+
+	$('.close-call-modal').click(function (e) {
+        e.preventDefault();
+        $('#call-modal').fadeOut();
+    });
+
 });
