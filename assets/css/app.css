@@ -1392,6 +1392,40 @@ body.home #main,
     display: none;
   }*/
 
+  #footer-resources {
+    background-color: #000000;
+    padding: 50px 35px;
+  }
+
+  #footer-resources .resource {
+    width: 33.33%;
+  }
+
+    #footer-resources .resource h4,
+    #footer-resources .resource p {
+      color: #ffffff;
+    }
+
+  #footer-resources .resource:nth-child(1),
+  #footer-resources .resource:nth-child(2) {
+    border-bottom: 1px #ffffff dotted;
+    border-right: 1px #ffffff dotted;
+  }
+
+  #footer-resources .resource:nth-child(3) {
+    border-bottom: 1px #ffffff dotted;
+    border-right: 0;
+  }
+
+  #footer-resources .resource:nth-child(4) {
+    border-right: 1px #ffffff dotted;
+    width: 50%;
+  }
+
+  #footer-resources .resource:last-child {
+    width: 50%;
+  }
+
 }
 
 @media (max-width: 950px) {

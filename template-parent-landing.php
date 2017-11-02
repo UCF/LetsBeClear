@@ -71,7 +71,8 @@ Template Name: Parent Landing
 				'post_parent' => $post->ID,
 				'post_type'   => 'page',
 				'orderby'     => 'menu_order',
-				'order'       => 'ASC'
+				'order'       => 'ASC',
+				'post_status' => 'publish'
 			); 
 		?>
 		
