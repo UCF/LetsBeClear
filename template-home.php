@@ -40,6 +40,22 @@ Template Name: Home
 
 			<?php endwhile; ?>
 
+				<div class="support">
+
+					<a href="#" class="content play-button play-video-modal">
+
+						<div class="inner">
+							
+							<img src="<?php the_field('home_about_play_button_icon'); ?>" alt="<?php the_field('home_about_header'); ?>" />
+
+							<h3><?php the_field('home_about_header'); ?></h3>
+
+						</div>
+
+					</a>
+
+				</div>
+
 			<div class="clear"></div>
 
 		</div>
@@ -48,28 +64,34 @@ Template Name: Home
 
 </div>
 
-<div id="home-about" style="background: url('<?php the_field('home_about_background_image'); ?>') no-repeat bottom right; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-	
-	<div class="container">
+<div id="video-modal">
 
-		<div class="content">
-			
-			<h2><?php the_field('home_about_header'); ?></h2>
+	<div class="video-modal-content">
 
-			<div class="copy"><?php the_field('home_about_content'); ?></div>
+		<img src="<?php echo get_template_directory_uri(); ?>/assets/img/video-modal-close.png" alt="Close" title="Close" class="close-video-modal" />
+		
+		<div class="video-iframe">
 
-			<ul>
+			<iframe id="videoModalIframe" src="<?php the_field('home_about_video_embed_code'); ?>" frameborder="0" allowfullscreen></iframe>
+
+			<script type="text/javascript">
 				
-				<li><a href="<?php the_field('home_about_get_help_button_link'); ?>" class="button gold"><?php the_field('home_about_get_help_button_text'); ?></a></li>
+				var url = $('#videoModalIframe').attr('src');
 
-				<li><a href="<?php the_field('home_about_what_is_title_ix_button_link'); ?>"><?php the_field('home_about_what_is_title_ix_button_text'); ?></a></li>
+				$('.play-video-modal').click(function (e) {
+			        e.preventDefault();
+			        $('#videoModalIframe').attr('src', url);
+			    });
 
-			</ul>
+				$('.close-video-modal').click(function (e) {
+			        e.preventDefault();
+			        $('#videoModalIframe').attr('src', '');
+			    });
+
+			</script>
 
 		</div>
 
 	</div>
-
-	<div class="gold-bck"></div>
 
 </div>

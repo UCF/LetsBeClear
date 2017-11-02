@@ -67,4 +67,14 @@ $(document).ready(function(){
         $('#call-modal').fadeOut();
     });
 
+    $('.play-video-modal').click(function (e) {
+        e.preventDefault();
+        $('#video-modal').fadeIn();
+    });
+
+	$('.close-video-modal').click(function (e) {
+        e.preventDefault();
+        $('#video-modal').fadeOut();
+    });
+
 });

@@ -370,13 +370,22 @@ b, strong {
    Home
    ========================================================================== */
 
+body.home #wrap,
+body.home #content,
+body.home #main,
 #home-hero {
-  padding: 200px 0 0 0;
+  height: 100%;
+}
+
+#home-hero {
+  padding: 100px 0 0 0;
+  position: relative;
+  min-height: 590px;
 }
 
   #home-hero h1 {
     background: url( '../img/opaque-gold-background.png' );
-    padding: 20px 23px 20px 25px;
+    padding: 20px 23px 13px 25px;
     display: inline-block;
     font-size: 4.250em;
     color: #000000;
@@ -385,7 +394,7 @@ b, strong {
 
   #home-hero .content {
     background-color: #000000;
-    line-height: 1.500em;
+    line-height: 1.250em;
     margin: 0 0 40px 0;
     padding: 20px 20px;
     font-size: 1.375em;
@@ -395,10 +404,9 @@ b, strong {
   }
 
   #home-hero .support {
-    /*background: url( '../img/opaque-black-background.png' );*/
     border-right: 4px transparent solid;
     text-align: center;
-    height: 300px;
+    height: 215px;
     width: 33.33%;
   }
 
@@ -408,7 +416,14 @@ b, strong {
       text-decoration: none;
     }
 
-  #home-hero .support:last-child {
+  #home-hero .flex-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  #home-hero .flex-container .support:nth-child(3) {
     border-right: 0;
   }
 
@@ -425,7 +440,7 @@ b, strong {
 
       #home-hero .support .content .inner {
         max-width: 275px;
-        margin: 25px auto 15px auto;
+        margin: 0 auto;
       }
 
     #home-hero .support img {
@@ -449,29 +464,44 @@ b, strong {
 
 #home-about {
   position: relative;
-  padding: 100px 0;
+  padding: 175px 0;
 }
 
   #home-about .content {
     position: relative;
-    max-width: 400px;
-    z-index: 2;
+    z-index: 5;
   }
 
   #home-about h2 {
-  	font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 800;
+  	/*font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 800;
   	letter-spacing: 1px;
     padding: 0 0 30px 0;
-    font-size: 2.688em;
+    position: relative;
+    font-size: 2.688em;*/
+    text-transform: uppercase;
+    padding: 40px 0 10px 0;
+    font-size: 1.500em;
+    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    z-index: 5;
   }
 
-  #home-about .copy {
-    padding: 0 0 100px 0;
+  #home-about ul {
+    margin: 50px 0 0 0;
+    position: relative;
+    z-index: 2;
   }
 
-  #home-about ul li {
-    display: inline-block;
-  }
+/*    #home-about ul li {
+      margin: 50px 0 0 0;
+      display: block;
+    }*/
+
+/*    #home-about ul li .button.gold a {
+      margin: 30px 0 0 0;
+      display: block;
+    }*/
 
   #home-about ul li .button.gold {
     background-color: #ffc801;
@@ -479,7 +509,7 @@ b, strong {
     font-size: 1.125em;
     font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
     color: #000000;
-    margin: 0;
+    margin: 30px 0 0 0;
   }
 
     #home-about ul li .button.gold:hover,
@@ -488,14 +518,47 @@ b, strong {
       background-color: #c90;
     }
 
-    #home-about ul li a {
+    /*#home-about ul li a {
       margin: 20px 20px 20px 20px;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 1.125em;
       font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
       color: #000000;
+    }*/
+
+    #home-about ul li a.play-button img {
+      height: 125px;
+      width: 125px;
     }
+
+  #home-about {
+    text-align: center;
+  }
+
+  .super-blk-bck {
+    background: url(../img/super-opaque-black-background.png);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .blk-bck {
+    background: url(../img/opaque-black-background.png);
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+  
+  #home-about .blk-bck {
+    /*display: none;*/
+  }
 
   #home-about .gold-bck {
     display: none;
@@ -510,6 +573,8 @@ b, strong {
     left: 0;
     top: 0;
   }
+
+
 
 
 
@@ -1066,7 +1131,41 @@ b, strong {
     right: 15px;
     top: 15px;
     width: 20px;
-    z-index: 101;
+    z-index: 10002;
+  }
+
+#video-modal {
+  background: url(../img/opaque-black-background.png);
+  position: fixed;
+  color: #ffffff;
+  display: none;
+  z-index: 10001;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+  .video-modal-content {
+    position: relative;
+    text-align: center;
+    max-height: 600px;
+    max-width: 550px;
+    margin: 20% auto 0 auto;
+  }
+
+    .video-modal-content iframe {
+      max-width: 100%;
+      height: 350px;
+      width: 550px;
+    }
+
+  .close-video-modal {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: -30px;
+    width: 20px;
+    z-index: 10002;
   }
 
 
@@ -1118,6 +1217,11 @@ b, strong {
     background-color: #ffc801;
     padding: 50px 0;
   }
+
+    #footer-resources .container {
+      max-width: 1200px;
+      width: 100%;
+    }
 
     #footer-resources .resource {
       border-right: 1px #000000 dotted;
@@ -1210,14 +1314,9 @@ b, strong {
     font-size: 0.750em;
   }
 
-  #home-about .copy {
-    padding: 0 0 30px 0;
-  }
-
-  #home-about ul li a {
+/*  #home-about ul li a {
     background-color: #ffc801;
     padding: 25px 28px 24px 30px;
-    display: block;
     font-size: 1.125em;
     font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
     color: #000000;
@@ -1228,7 +1327,7 @@ b, strong {
     #home-about ul li a:focus {
       text-decoration: none;
       background-color: #c90;
-    }
+    }*/
 
   #footer-resources .resource {
     padding: 50px 15px;
@@ -1271,10 +1370,6 @@ b, strong {
       padding: 10px 10px 10px 12px;
       margin: 0;
     }
-
-  #home-about .copy p {
-    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
-  }
 
   .subpage {
     padding: 0 0 40px 0;
@@ -1491,6 +1586,13 @@ b, strong {
       padding: 30px;
     }
 
+  #home-hero .flex-container {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    left: auto;
+  }
+
   #home-hero .support {
     width: 100%;
   }
@@ -1512,27 +1614,30 @@ b, strong {
   }
 
   #home-about {
-    padding: 50px 0;
+    padding: 100px 0 125px 0;
+  }
+
+  #home-about h2 {
+    padding: 40px 45px 10px 45px;
   }
 
   #home-about .content {
-    max-width: 600px;
     padding: 0 15px;
   }
 
-    #home-about ul li a,
+    /*#home-about ul li a,
     #home-about ul li .button.gold {
       background-color: #000000;
       color: #ffffff;
-    }
+    }*/
 
-    #home-about ul li a:hover,
+    /*#home-about ul li a:hover,
     #home-about ul li a:focus,
     #home-about ul li .button.gold:hover,
     #home-about ul li .button.gold:focus {
       background-color: #000000;
       color: #ffffff;
-    }
+    }*/
 
     #home-hero .support {
       border-right: 0;
