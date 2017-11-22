@@ -1308,6 +1308,14 @@ body.home #main,
    Media Queries
    ========================================================================== */
 
+@media (min-width: 1350px) {
+
+  .hero {
+    padding: 17% 0;
+  }
+
+}
+
 @media (max-width: 1200px) {
 
   #nav ul li a {
