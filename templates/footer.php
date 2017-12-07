@@ -20,6 +20,8 @@
 
 							<?php if ( get_sub_field('footer_resources_text_number', $frontpage_id) ): ?>
 
+								<br/>
+
 								<a href="tel:+1-<?php the_sub_field('footer_resources_text_number', $frontpage_id); ?>"><?php the_sub_field('footer_resources_text_number_cta', $frontpage_id); ?></a>
 
 							<?php else: endif; ?>

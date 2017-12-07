@@ -1223,13 +1223,16 @@ body.home #main,
       width: 100%;
     }
 
+    #footer-resources .flex-container {
+      flex-wrap: nowrap;
+    }
+
     #footer-resources .resource {
       border-right: 1px #000000 dotted;
       text-align: center;
       padding: 50px 30px;
       display: block;
       color: #000000;
-      width: 20%;
     }
 
     #footer-resources .resource:last-child {
@@ -1244,13 +1247,15 @@ body.home #main,
       }
 
         #footer-resources .resource h4 a {
+          font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
+          text-transform: none;
           color: #000000;
         }
 
-      #footer-resources .resource p {
+      #footer-resources .resource p,
+      #footer-resources .resource a {
         text-transform: uppercase;
         word-break: break-all;
-        font-size: 1.250em; 
         font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 800;
         color: #000000;
       }
@@ -1375,7 +1380,6 @@ body.home #main,
     #home-hero h1,
     .hero h1 {
       padding: 10px 13px 10px 15px;
-      /* Khockout goes here */
     }
 
     .hero .content {
@@ -1396,16 +1400,7 @@ body.home #main,
       max-width: 100%;
     }
 
-/*  .subnav-bar {
-    display: block;
-  }
-
-  .collapse.subnav-nav {
-    display: none;
-  }*/
-
   #footer-resources {
-    background-color: #000000;
     padding: 50px 35px;
   }
 
@@ -1420,22 +1415,25 @@ body.home #main,
 
   #footer-resources .resource:nth-child(1),
   #footer-resources .resource:nth-child(2) {
-    border-bottom: 1px #ffffff dotted;
-    border-right: 1px #ffffff dotted;
+    border-bottom: 1px #000000 dotted;
+    border-right: 1px #000000 dotted;
   }
 
   #footer-resources .resource:nth-child(3) {
-    border-bottom: 1px #ffffff dotted;
+    border-bottom: 1px #000000 dotted;
     border-right: 0;
   }
 
   #footer-resources .resource:nth-child(4) {
-    border-right: 1px #ffffff dotted;
-    width: 50%;
+    border-right: 1px #000000 dotted;
+  }
+
+  #footer-resources .resource:nth-child(5) {
+    border-right: 1px #000000 dotted;
   }
 
   #footer-resources .resource:last-child {
-    width: 50%;
+    border-right: 0;
   }
 
 }
@@ -1712,37 +1710,35 @@ body.home #main,
   }
 
   #footer-resources {
-    background-color: #000000;
     padding: 50px 35px;
   }
 
   #footer-resources .resource {
-    width: 33.33%;
+    width: 50%;
   }
 
     #footer-resources .resource h4,
     #footer-resources .resource p {
-      color: #ffffff;
+      color: #000000;
     }
 
   #footer-resources .resource:nth-child(1),
   #footer-resources .resource:nth-child(2) {
-    border-bottom: 1px #ffffff dotted;
-    border-right: 1px #ffffff dotted;
+    border-bottom: 1px #000000 dotted;
+    border-right: 1px #000000 dotted;
   }
 
   #footer-resources .resource:nth-child(3) {
-    border-bottom: 1px #ffffff dotted;
+    border-bottom: 1px #000000 dotted;
     border-right: 0;
   }
 
   #footer-resources .resource:nth-child(4) {
-    border-right: 1px #ffffff dotted;
-    width: 50%;
+    border-right: 1px #000000 dotted;
   }
 
   #footer-resources .resource:last-child {
-    width: 50%;
+    border-right: 0;
   }
 
   #footer {
@@ -1805,18 +1801,18 @@ body.home #main,
 
   #footer-resources .resource:nth-child(1),
   #footer-resources .resource:nth-child(3) {
-    border-bottom: 1px #ffffff dotted;
-    border-right: 1px #ffffff dotted;
+    border-bottom: 1px #000000 dotted;
+    border-right: 1px #000000 dotted;
   }
 
   #footer-resources .resource:nth-child(2),
   #footer-resources .resource:nth-child(4) {
-    border-bottom: 1px #ffffff dotted;
+    border-bottom: 1px #000000 dotted;
     border-right: 0;
-    width: 50%;
   }
 
   #footer-resources .resource:last-child {
+    border-top: 1px #000000 dotted;
     width: 100%;
   }
 
