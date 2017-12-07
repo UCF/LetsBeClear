@@ -1229,8 +1229,18 @@ body.home #main,
       padding: 50px 30px;
       display: block;
       color: #000000;
-      width: 16.66%;
+      width: 33.33%;
     }
+
+      #footer-resources .resource:nth-child(1),
+      #footer-resources .resource:nth-child(2),
+      #footer-resources .resource:nth-child(3) {
+        border-bottom: 1px #000000 dotted;
+      }
+
+      #footer-resources .resource:nth-child(3) {
+        border-right: 0;
+      }
 
     #footer-resources .resource:last-child {
       border-right: 0;
@@ -1253,7 +1263,7 @@ body.home #main,
       #footer-resources .resource a {
         text-transform: uppercase;
         word-break: break-all;
-        font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 800;
+        font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
         color: #000000;
       }
 
@@ -1719,19 +1729,23 @@ body.home #main,
       color: #000000;
     }
 
-  #footer-resources .resource:nth-child(1),
-  #footer-resources .resource:nth-child(2) {
+  #footer-resources .resource:nth-child(1) {
     border-bottom: 1px #000000 dotted;
     border-right: 1px #000000 dotted;
+  }
+
+  #footer-resources .resource:nth-child(2) {
+    border-bottom: 1px #000000 dotted;
   }
 
   #footer-resources .resource:nth-child(3) {
     border-bottom: 1px #000000 dotted;
+    border-right: 1px #000000 dotted;
     border-right: 0;
   }
 
   #footer-resources .resource:nth-child(4) {
-    border-right: 1px #000000 dotted;
+    border-bottom: 1px #000000 dotted;
   }
 
   #footer-resources .resource:last-child {
@@ -1792,7 +1806,7 @@ body.home #main,
   }
 
   #footer-resources .resource {
-    padding: 30px 0;
+    padding: 30px;
     width: 50%;
   }
 
@@ -1809,8 +1823,7 @@ body.home #main,
   }
 
   #footer-resources .resource:last-child {
-    border-top: 1px #000000 dotted;
-    width: 100%;
+    border-bottom: 1px #000000 dotted;
   }
 
 }
@@ -1839,7 +1852,8 @@ body.home #main,
     #footer-resources .resource:nth-child(1),
     #footer-resources .resource:nth-child(2),
     #footer-resources .resource:nth-child(3),
-    #footer-resources .resource:nth-child(4) {
+    #footer-resources .resource:nth-child(4),
+    #footer-resources .resource:nth-child(5) {
       border-right: 0;
       width: 100%;
     }
