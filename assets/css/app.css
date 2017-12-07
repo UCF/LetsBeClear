@@ -728,14 +728,14 @@ body.home #main,
     	color: #000000;
   	}
 
-  		.child-nav a:hover img,
+  		/*.child-nav a:hover img,
 	  	.child-nav a:focus img,
 	  	.current_page_item a:hover img,
 	  	.current_page_item a:focus img,
 	  	.page_item_has_children a:hover img,
 	  	.page_item_has_children a:focus img {
 	  		display: block;
-	  	}
+	  	}*/
 
   .page_item_has_children a {
     background-color: #efad05;
