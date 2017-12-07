@@ -12,13 +12,19 @@
 			
 					<?php while ( have_rows('footer_resources', $frontpage_id) ) : the_row(); ?>
 
-						<a href="tel:+1-<?php the_sub_field('footer_resources_number', $frontpage_id); ?>" class="resource">
+						<div class="resource">
 
-							<h4><?php the_sub_field('footer_resource_name', $frontpage_id); ?></h4>
+							<h4><a href="<?php the_sub_field('footer_resource_name_link', $frontpage_id); ?>" target="_blank"><?php the_sub_field('footer_resource_name', $frontpage_id); ?></a></h4>
 
-							<p><?php the_sub_field('footer_resources_number', $frontpage_id); ?></p>
+							<a href="tel:+1-<?php the_sub_field('footer_resources_number', $frontpage_id); ?>"><?php the_sub_field('footer_resources_number_cta', $frontpage_id); ?></a>
 
-						</a>
+							<?php if ( get_sub_field('footer_resources_text_number', $frontpage_id) ): ?>
+
+								<a href="tel:+1-<?php the_sub_field('footer_resources_text_number', $frontpage_id); ?>"><?php the_sub_field('footer_resources_text_number_cta', $frontpage_id); ?></a>
+
+							<?php else: endif; ?>
+
+						</div>
 
 					<?php endwhile; ?>
 

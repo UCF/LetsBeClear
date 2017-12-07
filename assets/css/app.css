@@ -380,7 +380,7 @@ body.home #main,
 #home-hero {
   padding: 100px 0 0 0;
   position: relative;
-  min-height: 590px;
+  min-height: 650px;
 }
 
   #home-hero h1 {
@@ -1242,6 +1242,10 @@ body.home #main,
         margin: 0 0 5px 0;
         font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
       }
+
+        #footer-resources .resource h4 a {
+          color: #000000;
+        }
 
       #footer-resources .resource p {
         text-transform: uppercase;
