@@ -1223,16 +1223,13 @@ body.home #main,
       width: 100%;
     }
 
-    #footer-resources .flex-container {
-      flex-wrap: nowrap;
-    }
-
     #footer-resources .resource {
       border-right: 1px #000000 dotted;
       text-align: center;
       padding: 50px 30px;
       display: block;
       color: #000000;
+      width: 16.66%;
     }
 
     #footer-resources .resource:last-child {
