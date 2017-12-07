@@ -1262,7 +1262,6 @@ body.home #main,
       #footer-resources .resource p,
       #footer-resources .resource a {
         text-transform: uppercase;
-        word-break: break-all;
         font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif; font-weight: 700;
         color: #000000;
       }
@@ -1823,7 +1822,7 @@ body.home #main,
   }
 
   #footer-resources .resource:last-child {
-    border-bottom: 1px #000000 dotted;
+    border-top: 1px #000000 dotted;
   }
 
 }
