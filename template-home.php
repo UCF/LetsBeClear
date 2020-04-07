@@ -5,7 +5,7 @@ Template Name: Home
 
 $home_info_bar = get_field( 'home_info_bar' );
 
-if( empty( $home_info_bar ) ) :
+if( ! empty( $home_info_bar ) ) :
 ?>
 <section class="ucf-section" id="ucf-section-info-bar">
 	<div class="jumbotron jumbotron-fluid bg-info-t-3">
