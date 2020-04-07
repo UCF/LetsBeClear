@@ -2,15 +2,19 @@
 /*
 Template Name: Home
 */
-?>
 
+$home_info_bar = get_field( 'home_info_bar' );
+
+if( $home_info_bar ) :
+?>
 <section class="ucf-section" id="ucf-section-info-bar">
 	<div class="jumbotron jumbotron-fluid bg-info-t-3">
 		<div class="container lead">
-			<?php echo get_field('home_info_bar'); ?>
+			<?php echo $home_info_bar; ?>
 		</div>
 	</div>
 </section>
+<?php endif; ?>
 
 <div id="home-hero" style="background: url('<?php the_field('home_hero_background_image'); ?>') no-repeat top center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
 
