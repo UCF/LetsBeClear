@@ -462,6 +462,53 @@ body.home #main,
       color: #ffffff;
     }
 
+
+
+/* ==========================================================================
+   Home Info Bar
+   ========================================================================== */
+
+#ucf-section-info-bar .bg-info-t-3 {
+  background-color: rgba(129,207,224,.75)!important;
+  margin-bottom: 0;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+}
+
+#ucf-section-info-bar .bg-info-t-3 p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+#ucf-section-info-bar a {
+  color: #000;
+  text-decoration: underline;
+}
+
+#ucf-section-info-bar a:hover {
+  color: #666;
+}
+
+#ucf-section-info-bar .jumbotron p {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  #ucf-section-info-bar .jumbotron  p {
+      font-size: 18px;
+  }
+}
+
+#ucf-section-info-bar .lead {
+  margin-bottom: 0;
+}
+
+
+
+/* ==========================================================================
+   Home About
+   ========================================================================== */
+
 #home-about {
   position: relative;
   padding: 175px 0;
