@@ -9,7 +9,7 @@
  *
  * Enqueue scripts in the following order:
  * 1. /theme/assets/js/vendor/modernizr-2.6.2.min.js  (in head.php)
- * 2. jquery-1.11.2.min.js via Google CDN              (in head.php)
+ * 2. jquery-3.3.1.min.js via code.jquery.com              (in head.php)
  * 3. /theme/assets/js/plugins.js
  * 4. /theme/assets/js/main.js
  */
